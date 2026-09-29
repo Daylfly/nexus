@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --font-display: 'Unbounded', ui-sans-serif, system-ui, sans-serif;
+
+    --color-nx-bg: #07070c;
+    --color-nx-elevated: #0c0c14;
+    --color-nx-surface: #11111a;
+    --color-nx-card: #15151f;
+    --color-nx-card-hover: #1b1b28;
+    --color-nx-border: #242433;
+    --color-nx-muted: #8a8a9c;
+    --color-nx-faint: #5c5c70;
+    --color-nx-text: #f4f4f8;
+    --color-nx-accent: #7c5cff;
+    --color-nx-accent-soft: #9b82ff;
+    --color-nx-score: #c8f542;
+    --color-nx-score-ink: #1a2208;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: var(--color-nx-bg);
+        color: var(--color-nx-text);
+    }
+
+    ::selection {
+        background: color-mix(in srgb, var(--color-nx-accent) 40%, transparent);
+    }
+}
+
+@utility ticker-track {
+    animation: ticker 40s linear infinite;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
