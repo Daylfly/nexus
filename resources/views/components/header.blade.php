@@ -9,7 +9,7 @@
     ];
 @endphp
 
-<header class="sticky top-0 z-40 border-b border-nx-border/80 bg-nx-bg/90 backdrop-blur-md">
+<header class="top-0 z-40 border-b border-nx-border/80 bg-nx-bg/90 backdrop-blur-md">
     <div class="max-w-[1400px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
 
         <!-- Логотип + Главное меню -->
@@ -19,12 +19,10 @@
                 <div class="w-6 h-6 rounded bg-indigo-600/30 border border-indigo-500/50 flex items-center justify-center">
                     <span class="text-[10px] font-extrabold text-indigo-400">N</span>
                 </div>
-                <span class="text-xl font-black tracking-wider text-white">NEXUS</span>
+                <span class="text-xl font-blacktext-white">NEXUS</span>
             </a>
 
-            <!-- Навигация -->
             <nav class="hidden lg:flex items-center space-x-1 bg-[#14161d] p-1.5 rounded-2xl border border-white/5">
-                <!-- Активная кнопка -->
                 <a href="#" class="px-5 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-500 text-white font-bold shadow-lg shadow-indigo-500/20 transition-all">
                     Главная
                 </a>
@@ -47,10 +45,7 @@
             </nav>
         </div>
 
-        <!-- Правая секция: Платформы + Поиск + Уведомления -->
         <div class="flex items-center space-x-4">
-
-            <!-- Фильтр платформ -->
             <div class="hidden xl:flex items-center bg-[#14161d] p-1 rounded-xl border border-white/5 text-xs font-bold tracking-wide">
                 <button class="px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">
                     PC
@@ -66,7 +61,6 @@
                 </button>
             </div>
 
-            <!-- Поле поиска -->
             <div class="relative w-48 sm:w-64 md:w-80">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

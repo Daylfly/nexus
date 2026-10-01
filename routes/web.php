@@ -39,3 +39,10 @@ Route::prefix('products')->name('products.')->group(function () {
 // DELETE /products/{product} -> products.destroy
     Route::delete('/{product}', [ProductController::class, 'destroy'])->name('destroy');
 });
+use App\Http\Controllers\ReviewController;
+
+// Список всех обзоров
+Route::get('/reviews', [ReviewController::class, 'show'])->name('reviews.show');
+
+// Детальная страница одного обзора (устраняет ошибку)
+Route::get('/reviews/{id}', [ReviewController::class, 'show'])->name('reviews.show');
